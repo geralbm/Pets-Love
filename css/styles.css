@@ -4,8 +4,8 @@
 /* Estilo General de las páginas */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding:0; 
+    /* margin: 0;
+    padding:0;  */
     font-size: 20px;
     
     
@@ -37,9 +37,9 @@
     letter-spacing: 5px;
 }
 
-.header nav .nav-links{
+/* .header nav .nav-links{
     list-style: none;
-}
+} */
 .header  nav .nav-links li a{
     color: beige;
     list-style: none;
@@ -48,7 +48,12 @@
 }
 
 
+/* Estilos de SubMenu */
+
+
 /* Estilos: Pie de Pagina */
+
+
 .piePagina{
     background-color:#AA1515;
     border-style: ridge;
@@ -71,4 +76,10 @@
 
 .piePagina div p a{
     color: black;
+}
+
+.contenedor{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
