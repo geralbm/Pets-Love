@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../assets/icons/iconoPagina.PNG">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referencia a Bootsrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Referencia a Estilos -->
+        <link rel="stylesheet" href="../css/styles.css">
+
     <title>Mi Cuenta</title>
 </head>
-<body>
-    <h1>Mi cuenta</h1>
+<body class="bodyMicuenta">
+
+    <main>
+        <h5 class="titContactos initialilg">MI CUENTA | LOGIN</h5>
+
+        <!-- Formulario Login -->
+        <div class="container col-sm-9 my-auto">
+            <form action="">
+                <h5 class="subtitContactos initialism ">Completar Datos:</h5>
+            
+                <label class="col-sm-9 my-auto"  for="correo"><span>(*)</span> Email: </label>
+                    <div class="input-group mb-4 mr-sm-4 col-sm-9 my-auto">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text ">@</div>
+                        </div>
+                        <input type="text" class="form-control col-sm-7" id="inlineFormInputGroupUsername2" placeholder="usuario@example.com">
+                    </div>
+
+                    <div class="form-group col-sm-7 my-auto">
+                        <label  for="nombre"><span>(*)</span> Contreseña:</label>
+                        <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                        <p class="form-text text-muted" >(Números - letras - caracteres especiales)</p>
+                        
+                    </div>        
+
+            <!-- Botones -->
+                <div class="form-group">
+                    <input class="btn btn-outline-success" for="success-outlined" type="reset" name="" id="" value="Limpiar Datos">
+
+                    <input class="btn btn-outline-success" for="success-outlined" disabled type="submit" value="Ingresar">
+
+                    <input class="btn btn-outline-success" for="success-outlined" type="reset" name="" id="" value="Recuperar Contreseña">
+        </div>
+</form>
+
+<!-- Link a Home -->
+<div class="btnVolver">
+    <p><a href="../index.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Volver</a></p>
+</div>
+
+    </main>
+
 </body>
 </html>
