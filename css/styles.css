@@ -9,7 +9,6 @@
     
 }
 
-
 /* Estilo del Encabezado de las paginas - Navbar */
 .navbar{
     margin: 0;
@@ -66,6 +65,32 @@
     font-size: 12px;
 }
 
+/* Estilos Cards de Home - Ofertas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 0.5fr));
+    grid-gap: 25px;
+    align-items:center;
+}
+
+.grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.grid .text {
+    padding: 10px;
+    text-align: center;
+}
+
+
+
 /* Estilos del Formulario Contactos */
 
 .tit{
@@ -74,6 +99,13 @@
     font-weight: bold; 
 }
 
+.titOfertas{
+    color: rgb(163, 195, 34);
+    letter-spacing: 3px;
+    font-weight: bold; 
+    margin:8px;
+    
+}
 .subtit{
     color: rgba(138, 129, 129, 0.609);
     font-weight: bold;
@@ -128,6 +160,18 @@ span{
 /* Estilos: Pie de Pagina */
 
 .piePagina{
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10px;
+}
+
+.piePaginacont, .piePaginacuenta, .piePaginasucu, .piePaginadogs{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -138,31 +182,30 @@ span{
     align-items: center;
     flex-wrap: wrap;
     font-size: 10px;
-
 }
-.piePagina{
+.piePagina, .piePaginacont, .piePaginacuenta, .piePaginasucu, .piePaginadogs{
     background-color:#AA1515;
     border-style: ridge;
     border: 1px solid rgba(152, 148, 151, 0.723);
 }
 
-.piePagina ul li{
+.piePagina ul li, .piePaginacont ul li, .piePaginacuenta ul li, .piePaginasucu ul li, .piePaginadogs ul li{
     list-style: none;
     letter-spacing: 4px;
     margin-top: 8%;
     font-family: "Poppins", sans-serif;
     
 }
-.piePagina ul li a{
+.piePagina  ul li a, .piePaginacont ul li a, .piePaginacuenta ul li a, .piePaginasucu ul li a, .piePaginadogs ul li a{
     color: beige;
 }
 
-.piePagina div p{
+.piePagina div p, .piePaginacont div p, .piePaginacuenta div p,.piePaginasucu div p, .piePaginadogs div p{
     color: beige;
     letter-spacing: 4px;
 }
 
-.piePagina div p a{
+.piePagina div p a, .piePaginacont div p a, .piePaginacuenta div p a.piePaginasucu div p a, .piePaginadogs div p a{
     color: black;
 }
 
