@@ -18,13 +18,37 @@
 </head>
 <body class="bodyContactos">
 
+    <!-- Navbar -->
     <header class="header">
-        <!-- Logo -->
-        <div class="logo">
-            <img src="../assets/img/Logo.PNG" alt="Logo de la marca">
-        </div>
-    </header>
 
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/Logo.PNG" width="30" height="30" alt="">
+            </a>
+
+            <h1 class="subtit initialism">PTES LOVE</h1>
+
+            <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+            
+                <li class="nav-item col-md-16 mb-md-0 p-md-20">
+                    <a class="nav-link "target="_blank" href="../pages/miCuenta.html">MI CUENTA</a>
+                </li>
+
+                <li class="nav-item col-md-16 mb-md-0 p-md-20">
+                    <a class="nav-link " target="_blank" href="../pages/perrosSnacks.html">MASCOTAS</a>
+                </li>
+                </ul>
+
+                <!-- Navbar Boton Buscar -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Alimentos, snacks" aria-label="Search">
+                    <button class="btnHome btn btn-danger .text-light my-2 my-sm-0" type="submit">BUSCAR</button>
+                </form>
+            </div>
+        
+        </nav>
     <main>
         <h5 class="tit initialilg">CONTACTANOS</h5>
 
@@ -32,7 +56,7 @@
         <div class="container col-sm-9 my-auto">
             <form action="">
 
-                    <h5 class="subtit initialism ">Datos Personales:</h5>
+                    <h5 class="subtit initialism">Datos Personales:</h5>
 
                     <div class="form-group col-sm-8 my-auto">
                         <label  for="nombre"><span>(*)</span> Nombre & Apellido:</label>
@@ -88,17 +112,13 @@
 
 
         </div>
-        
-
-        
-        
     </main>
 
     <!-- Pie de Página -->
     <footer class="piePagina">
         <ul>
-            <li><a href="./contactos.html" target="_blank">Contactanos</a></li>
-            <li><a href="./sucursales.html" target="_blank">Sucurasales</a></li>
+            <li><a href="./pages/contactos.html" target="_blank">Contactanos</a></li>
+            <li><a href="/pages/sucursales.html" target="_blank">Sucurasales</a></li>
         </ul>
         
         <div>
@@ -108,7 +128,7 @@
             
         </div>
     </footer>
-    <!--SCRIPT BTS-->
+    <!--Referencia a Bootsrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
