@@ -45,16 +45,14 @@
 .navbar-nav .nav-item{
     display: flex;
     flex-direction: row-reverse;
+    text-align:left;
 }
 .navbar-nav .nav-item .nav-link{
     color:rgb(220, 238, 228);
     font-size: 15px;
     font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-
-    
-    
+    text-align:left;
+    text-decoration: underline; 
 }
 
 .visually-hidden{
@@ -63,36 +61,53 @@
 }
 
 .btnHome {
-    font-size: 12px;
+    font-size: 15px;
     margin: 5px;
+    font-weight: bold;
+    
 }
 
 /* Estilos Cards de Home - Ofertas */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 0.5fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 0.5fr));
     grid-gap: 25px;
-    align-items:center;
+    align-items:flex-end;
+    
 }
 
 .grid > article {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    
 }
 
 .grid > article img {
-    max-width: 100%;
-    text-align: center;
+    /* max-width: 100%; */
+    text-align:center;
 
 }
 
-.grid .text {
+.grid .text h5{
     padding: 10px;
     text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #b9761fb5;
 }
 
+.grid .text p{
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
 
-
+.grid .text .btn{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold ;
+    color: #faf7f7;
+}
 /* Estilos del Formulario Contactos */
 
 .tit{
