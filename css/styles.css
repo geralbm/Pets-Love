@@ -27,6 +27,7 @@
     border: 1px solid;
     display: flex;
     flex-direction: column;
+    margin-left: 4px;
 }
 .navbar img:hover{
     transform: scale(1.2);
@@ -63,6 +64,7 @@
 
 .btnHome {
     font-size: 12px;
+    margin: 5px;
 }
 
 /* Estilos Cards de Home - Ofertas */
@@ -168,7 +170,8 @@ span{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .piePaginacont, .piePaginacuenta, .piePaginasucu{
@@ -181,7 +184,8 @@ span{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 10px;
+    font-size: 17px;
+    font-weight: bold;
 }
 .piePagina, .piePaginacont, .piePaginacuenta, .piePaginasucu, .piePaginadogs{
     background-color:#AA1515;
@@ -203,9 +207,12 @@ span{
 .piePagina div p, .piePaginacont div p, .piePaginacuenta div p,.piePaginasucu div p, .piePaginadogs div p{
     color: beige;
     letter-spacing: 4px;
+    text-align: center;
 }
 
-.piePagina div p a, .piePaginacont div p a, .piePaginacuenta div p a.piePaginasucu div p a, .piePaginadogs div p a{
+.piePagina div p a, .piePaginacont div p a, .piePaginacuenta div p a,.piePaginasucu div p a, .piePaginadogs div p a{
     color: black;
+    font-size: 25px;
+
 }
 
