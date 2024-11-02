@@ -1,233 +1,228 @@
+@charset "UTF-8";
 /* Tipografia */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Reset de página */
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Estilo del Encabezado de las paginas - Navbar */
-.navbar{
-    margin: 0;
-    padding: 0;
-    background-image: url("../assets/img/fondoNavbar.png");
-    border: 1px solid rgba(152, 148, 151, 0.723);
-    width: 100%;
-    height: 60%;
-}
-.navbar img{
-    height: 70px;
-    width: auto;
-    transition: all 0.3s;
-    border-radius: 30px;
-    border-radius: 50% 0% 50% 0% ;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    margin-left: 4px;
-}
-.navbar img:hover{
-    transform: scale(1.2);
-    display: flex;
-    flex-direction: column;
+.navbar {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/img/fondoNavbar.png");
+  border: 1px solid rgba(152, 148, 151, 0.723);
+  width: 100%;
+  height: 60%;
 }
 
-.header nav h1{
-    font-size: 40px;
-    color: rgba(247, 241, 238, 0.683);
-    font-weight: bold;
-    letter-spacing: 5px;
+.navbar img {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+  border-radius: 30px;
+  border-radius: 50% 0% 50% 0%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4px;
 }
 
-.navbar-nav .nav-item{
-    display: flex;
-    flex-direction: row-reverse;
-    text-align:left;
-}
-.navbar-nav .nav-item .nav-link{
-    color:rgb(220, 238, 228);
-    font-size: 15px;
-    font-weight: bold;
-    text-align:left;
-    text-decoration: underline; 
+.navbar img:hover {
+  transform: scale(1.2);
+  display: flex;
+  flex-direction: column;
 }
 
-.visually-hidden{
-    font-size: 12px;
-    font-weight: bold;
+.header nav h1 {
+  font-size: 40px;
+  color: rgba(247, 241, 238, 0.683);
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgb(220, 238, 228);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .btnHome {
-    font-size: 15px;
-    margin: 5px;
-    font-weight: bold;
-    
+  font-size: 15px;
+  margin: 5px;
+  font-weight: bold;
 }
 
 /* Estilos Cards de Home - Ofertas */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 0.5fr));
-    grid-gap: 25px;
-    align-items:flex-end;
-    
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 0.5fr));
+  grid-gap: 25px;
+  align-items: flex-end;
 }
 
 .grid > article {
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-    
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
 .grid > article img {
-    /* max-width: 100%; */
-    text-align:center;
-
+  /* max-width: 100%; */
+  text-align: center;
 }
 
-.grid .text h5{
-    padding: 10px;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    color: #b9761fb5;
+.grid .text h5 {
+  padding: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: rgba(185, 118, 31, 0.7098039216);
 }
 
-.grid .text p{
-    padding: 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
+.grid .text p {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
-.grid .text .btn{
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: bold ;
-    color: #faf7f7;
+.grid .text .btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #faf7f7;
 }
+
 /* Estilos del Formulario Contactos */
-
-.tit{
-    color: brown;
-    letter-spacing: 3px;
-    font-weight: bold; 
+.tit {
+  color: brown;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 
-.titOfertas{
-    color: rgb(163, 195, 34);
-    letter-spacing: 3px;
-    font-weight: bold; 
-    margin:8px;
-    
-}
-.subtit{
-    color: rgba(138, 129, 129, 0.609);
-    font-weight: bold;
-    word-spacing: 8px;
-    letter-spacing: 3px;
-    font-size: 15px;
-    
+.titOfertas {
+  color: rgb(163, 195, 34);
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin: 8px;
 }
 
-.form-control{
-    background-color:rgba(201, 190, 190, 0.544);
+.subtit {
+  color: rgba(138, 129, 129, 0.609);
+  font-weight: bold;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  font-size: 15px;
 }
 
-span{
-    color: rgb(194, 47, 47);
-    font-size: 10px;
+.form-control {
+  background-color: rgba(201, 190, 190, 0.544);
 }
 
-.form-group label, label{
-    color: rgba(0, 0, 0, 0.642);
-    font-weight: bold;
-    font-size: 0.8rem;
-    
+span {
+  color: rgb(194, 47, 47);
+  font-size: 10px;
 }
 
-.form-group select option{
-    font-size: 11px;
+.form-group label, label {
+  color: rgba(0, 0, 0, 0.642);
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
-.form-group input, input, .form-control,.input-group-text, .form-select {
-    font-size: 0.8rem;
-    font-style: italic;
-    color: gray;
+.form-group select option {
+  font-size: 11px;
 }
 
-.form-group p{
-    font-size: 0.7rem;
-    font-style: italic;
+.form-group input, input, .form-control, .input-group-text, .form-select {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: gray;
 }
 
-.btnVolver p a{
-    display: flex;
-    color:#720707;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-    justify-content: center;
-    letter-spacing: 3px;
+.form-group p {
+  font-size: 0.7rem;
+  font-style: italic;
 }
 
+.btnVolver p a {
+  display: flex;
+  color: #720707;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  justify-content: center;
+  letter-spacing: 3px;
+}
 
 /* Estilos: Pie de Pagina */
-
-.piePagina, .piePaginadogs{
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    margin-top: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 15px;
-    font-weight: bold;
+.piePagina, .piePaginadogs {
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.piePaginacont, .piePaginacuenta, .piePaginasucu{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    margin-top: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 17px;
-    font-weight: bold;
-}
-.piePagina, .piePaginacont, .piePaginacuenta, .piePaginasucu, .piePaginadogs{
-    background-color:#AA1515;
-    border-style: ridge;
-    border: 1px solid rgba(152, 148, 151, 0.723);
+.piePaginacont, .piePaginacuenta, .piePaginasucu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 17px;
+  font-weight: bold;
 }
 
-.piePagina ul li, .piePaginacont ul li, .piePaginacuenta ul li, .piePaginasucu ul li, .piePaginadogs ul li{
-    list-style: none;
-    letter-spacing: 4px;
-    margin-top: 8%;
-    font-family: "Poppins", sans-serif;
-    
-}
-.piePagina  ul li a, .piePaginacont ul li a, .piePaginacuenta ul li a, .piePaginasucu ul li a, .piePaginadogs ul li a{
-    color: beige;
+.piePagina, .piePaginacont, .piePaginacuenta, .piePaginasucu, .piePaginadogs {
+  background-color: #AA1515;
+  border-style: ridge;
+  border: 1px solid rgba(152, 148, 151, 0.723);
 }
 
-.piePagina div p, .piePaginacont div p, .piePaginacuenta div p,.piePaginasucu div p, .piePaginadogs div p{
-    color: beige;
-    letter-spacing: 4px;
-    text-align: center;
+.piePagina ul li, .piePaginacont ul li, .piePaginacuenta ul li, .piePaginasucu ul li, .piePaginadogs ul li {
+  list-style: none;
+  letter-spacing: 4px;
+  margin-top: 8%;
+  font-family: "Poppins", sans-serif;
 }
 
-.piePagina div p a, .piePaginacont div p a, .piePaginacuenta div p a,.piePaginasucu div p a, .piePaginadogs div p a{
-    color: black;
-    font-size: 25px;
-
+.piePagina ul li a, .piePaginacont ul li a, .piePaginacuenta ul li a, .piePaginasucu ul li a, .piePaginadogs ul li a {
+  color: beige;
 }
 
+.piePagina div p, .piePaginacont div p, .piePaginacuenta div p, .piePaginasucu div p, .piePaginadogs div p {
+  color: beige;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.piePagina div p a, .piePaginacont div p a, .piePaginacuenta div p a, .piePaginasucu div p a, .piePaginadogs div p a {
+  color: black;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */
