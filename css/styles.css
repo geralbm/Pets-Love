@@ -1,11 +1,66 @@
 @charset "UTF-8";
-/* Tipografia */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Reset de página */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Estilos: Pie de Pagina */
+.piePagina, .piePaginadogs {
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.piePaginacont, .piePaginacuenta, .piePaginasucu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.piePagina, .piePaginacont, .piePaginacuenta, .piePaginasucu, .piePaginadogs {
+  background-color: #AA1515;
+  border-style: ridge;
+  border: 1px solid rgba(152, 148, 151, 0.723);
+}
+
+.piePagina ul li, .piePaginacont ul li, .piePaginacuenta ul li, .piePaginasucu ul li, .piePaginadogs ul li {
+  list-style: none;
+  letter-spacing: 4px;
+  margin-top: 8%;
+  font-family: "Poppins", sans-serif;
+}
+
+.piePagina ul li a, .piePaginacont ul li a, .piePaginacuenta ul li a, .piePaginasucu ul li a, .piePaginadogs ul li a {
+  color: beige;
+}
+
+.piePagina div p, .piePaginacont div p, .piePaginacuenta div p, .piePaginasucu div p, .piePaginadogs div p {
+  color: beige;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.piePagina div p a, .piePaginacont div p a, .piePaginacuenta div p a, .piePaginasucu div p a, .piePaginadogs div p a {
+  color: black;
+  font-size: 25px;
 }
 
 /* Estilo del Encabezado de las paginas - Navbar */
@@ -169,60 +224,6 @@ span {
   letter-spacing: 3px;
 }
 
-/* Estilos: Pie de Pagina */
-.piePagina, .piePaginadogs {
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  margin-top: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.piePaginacont, .piePaginacuenta, .piePaginasucu {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  margin-top: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.piePagina, .piePaginacont, .piePaginacuenta, .piePaginasucu, .piePaginadogs {
-  background-color: #AA1515;
-  border-style: ridge;
-  border: 1px solid rgba(152, 148, 151, 0.723);
-}
-
-.piePagina ul li, .piePaginacont ul li, .piePaginacuenta ul li, .piePaginasucu ul li, .piePaginadogs ul li {
-  list-style: none;
-  letter-spacing: 4px;
-  margin-top: 8%;
-  font-family: "Poppins", sans-serif;
-}
-
-.piePagina ul li a, .piePaginacont ul li a, .piePaginacuenta ul li a, .piePaginasucu ul li a, .piePaginadogs ul li a {
-  color: beige;
-}
-
-.piePagina div p, .piePaginacont div p, .piePaginacuenta div p, .piePaginasucu div p, .piePaginadogs div p {
-  color: beige;
-  letter-spacing: 4px;
-  text-align: center;
-}
-
-.piePagina div p a, .piePaginacont div p a, .piePaginacuenta div p a, .piePaginasucu div p a, .piePaginadogs div p a {
-  color: black;
-  font-size: 25px;
-}
+/* Tipografia */
 
 /*# sourceMappingURL=styles.css.map */
