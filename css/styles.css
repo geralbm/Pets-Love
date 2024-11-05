@@ -224,7 +224,7 @@ span {
   letter-spacing: 3px;
 }
 
-body {
+.body-error {
   background-color: rgba(203, 80, 80, 0.612);
   display: flex;
   width: 100%;
