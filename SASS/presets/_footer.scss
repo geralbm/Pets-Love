@@ -14,16 +14,16 @@
 }
 
 .piePaginacont, .piePaginacuenta, .piePaginasucu{
-    position: absolute;
+    position:absolute;
     bottom: 0;
     width: 100%;
-    height: auto;
+    height: 10%;
     margin-top: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 17px;
+    font-size: 12px;
     font-weight: bold;
 }
 .piePagina, .piePaginacont, .piePaginacuenta, .piePaginasucu, .piePaginadogs{
