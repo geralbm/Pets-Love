@@ -3,9 +3,9 @@
 //Inicialización de variables
 let mail = "";
 let longMail = 0;
-var valido = true;
-var reinten = false;
-var cantReint = 1;
+let valido = true;
+let reinten = false;
+let cantReint = 1;
 
 
 //Inicio del Programa

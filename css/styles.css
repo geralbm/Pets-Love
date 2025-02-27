@@ -1,6 +1,181 @@
 @charset "UTF-8";
-/* Reset de página */
+/* Tipografia */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Estilos del Formulario Contactos */
+.tit {
+  color: brown;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.titOfertas {
+  color: rgb(163, 195, 34);
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.subtit {
+  color: rgba(138, 129, 129, 0.609);
+  font-weight: bold;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.form-control {
+  background-color: rgba(201, 190, 190, 0.544);
+}
+
+span {
+  color: rgb(194, 47, 47);
+  font-size: 10px;
+}
+
+.form-group label, label {
+  color: rgba(0, 0, 0, 0.642);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.form-group select option {
+  font-size: 11px;
+}
+
+.form-group input, input, .form-control, .input-group-text, .form-select {
+  font-size: 0.8rem;
+  color: rgba(84, 75, 71, 0.683);
+}
+
+.form-group .btn {
+  color: brown;
+  background-color: rgba(247, 241, 238, 0.683);
+}
+
+.form-group p {
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+.btnVolver p a {
+  display: flex;
+  color: #720707;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  justify-content: center;
+  letter-spacing: 3px;
+}
+
+/* Estilo del Encabezado de las paginas - Navbar */
+.navbar {
+  margin: 0;
+  padding: 0;
+  background-image: url("/assets/img/fondoNavbar.png");
+  width: 100%;
+  height: 60%;
+  border: 1px solid rgba(152, 148, 151, 0.723);
+}
+
+.navbar a img {
+  padding: 5px;
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+  border-radius: 30px;
+  border-radius: 50% 0% 50% 0%;
+  border: 1px solid;
+}
+
+.navbar a img:hover {
+  transform: scale(1.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .navbar-toggler {
+  background-color: rgb(226, 213, 213);
+  border-color: rgb(194, 47, 47);
+}
+
+div .tit {
+  color: rgba(247, 241, 238, 0.683);
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.btn {
+  background-color: rgb(194, 47, 47);
+  border-color: rgb(194, 47, 47);
+  color: rgba(247, 241, 238, 0.683);
+  font-weight: bold;
+  margin: 8px;
+}
+
+div {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+div input .form-control {
+  font-size: 10px;
+}
+
+/* Estilos Cards de Home - Ofertas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 0.5fr));
+  grid-gap: 25px;
+  align-items: flex-end;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  /* max-width: 100%; */
+  text-align: center;
+}
+
+.grid .text h5 {
+  padding: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: rgba(185, 118, 31, 0.7098039216);
+}
+
+.grid .text p {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.grid .text .btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #faf7f7;
+}
+
+.body-error {
+  background-color: rgba(203, 80, 80, 0.612);
+  display: flex;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.page-error .error-h1 {
+  color: rgb(224, 229, 233);
+  font-family: "Poppins", sans-serif;
+  font-weight: 30px;
+}
+
+/* Reset de página */
 * {
   margin: 0;
   padding: 0;
@@ -62,182 +237,5 @@
   color: black;
   font-size: 25px;
 }
-
-/* Estilo del Encabezado de las paginas - Navbar */
-.navbar {
-  margin: 0;
-  padding: 0;
-  background-image: url("../assets/img/fondoNavbar.png");
-  border: 1px solid rgba(152, 148, 151, 0.723);
-  width: 100%;
-  height: 60%;
-}
-
-.navbar img {
-  height: 70px;
-  width: auto;
-  transition: all 0.3s;
-  border-radius: 30px;
-  border-radius: 50% 0% 50% 0%;
-  border: 1px solid;
-  display: flex;
-  flex-direction: column;
-  margin-left: 4px;
-}
-
-.navbar img:hover {
-  transform: scale(1.2);
-  display: flex;
-  flex-direction: column;
-}
-
-.header nav h1 {
-  font-size: 40px;
-  color: rgba(247, 241, 238, 0.683);
-  font-weight: bold;
-  letter-spacing: 5px;
-}
-
-.navbar-nav .nav-item {
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: left;
-}
-
-.navbar-nav .nav-item .nav-link {
-  color: rgb(220, 238, 228);
-  font-size: 15px;
-  font-weight: bold;
-  text-align: left;
-  text-decoration: underline;
-}
-
-.visually-hidden {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.btnHome {
-  font-size: 15px;
-  margin: 5px;
-  font-weight: bold;
-}
-
-/* Estilos Cards de Home - Ofertas */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 0.5fr));
-  grid-gap: 25px;
-  align-items: flex-end;
-}
-
-.grid > article {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-}
-
-.grid > article img {
-  /* max-width: 100%; */
-  text-align: center;
-}
-
-.grid .text h5 {
-  padding: 10px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  color: rgba(185, 118, 31, 0.7098039216);
-}
-
-.grid .text p {
-  padding: 10px;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-}
-
-.grid .text .btn {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #faf7f7;
-}
-
-/* Estilos del Formulario Contactos */
-.tit {
-  color: brown;
-  letter-spacing: 3px;
-  font-weight: bold;
-}
-
-.titOfertas {
-  color: rgb(163, 195, 34);
-  letter-spacing: 3px;
-  font-weight: bold;
-  margin: 8px;
-}
-
-.subtit {
-  color: rgba(138, 129, 129, 0.609);
-  font-weight: bold;
-  word-spacing: 8px;
-  letter-spacing: 3px;
-  font-size: 15px;
-}
-
-.form-control {
-  background-color: rgba(201, 190, 190, 0.544);
-}
-
-span {
-  color: rgb(194, 47, 47);
-  font-size: 10px;
-}
-
-.form-group label, label {
-  color: rgba(0, 0, 0, 0.642);
-  font-weight: bold;
-  font-size: 0.8rem;
-}
-
-.form-group select option {
-  font-size: 11px;
-}
-
-.form-group input, input, .form-control, .input-group-text, .form-select {
-  font-size: 0.8rem;
-  font-style: italic;
-  color: gray;
-}
-
-.form-group p {
-  font-size: 0.7rem;
-  font-style: italic;
-}
-
-.btnVolver p a {
-  display: flex;
-  color: #720707;
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: underline;
-  justify-content: center;
-  letter-spacing: 3px;
-}
-
-.body-error {
-  background-color: rgba(203, 80, 80, 0.612);
-  display: flex;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  justify-content: center;
-}
-
-.page-error .error-h1 {
-  color: rgb(224, 229, 233);
-  font-family: "Poppins", sans-serif;
-  font-weight: 30px;
-}
-
-/* Tipografia */
 
 /*# sourceMappingURL=styles.css.map */

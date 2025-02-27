@@ -44,9 +44,14 @@ span{
 
 .form-group input, input, .form-control,.input-group-text, .form-select {
     font-size: 0.8rem;
-    font-style: italic;
-    color: gray;
+    color: rgba(84, 75, 71, 0.683);
 }
+
+.form-group .btn{
+    color: brown;
+    background-color: rgba(247, 241, 238, 0.683);
+}
+
 
 .form-group p{
     font-size: 0.7rem;
